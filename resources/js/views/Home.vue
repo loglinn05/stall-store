@@ -2,7 +2,7 @@
     <div
         class="after:content-[' '] after:block after:h-0 after:clear-both mb-14"
     >
-        <h1 class="text-4xl sm:text-5xl mb-14">Трішечки про мене</h1>
+        <h1 class="mb-14">Трішечки про мене</h1>
         <div>
             <div class="lg:w-80 md:w-64 w-full float-left mr-5 md:mb-0 mb-5">
                 <img
@@ -10,7 +10,7 @@
                     class="w-full h-full object-cover"
                 />
             </div>
-            <p class="text-base sm:text-lg font-text">
+            <p>
                 Мене звуть Ангеліна, я - Full Stack розробниця на Vue.js 3 та
                 Laravel (8-11) з міцною основою в створенні адаптивних та
                 динамічних вебзастосунків. Я здатна створити адаптивні
@@ -47,7 +47,7 @@
             </div>
         </template>
     </Galleria>
-    <h2 class="mt-10 text-3xl sm:text-4xl mb-14">
+    <h2 class="mt-10 mb-14">
         На тестове витрачено чотири дні.
         <span class="pi pi-clock before:text-2xl"></span>
     </h2>

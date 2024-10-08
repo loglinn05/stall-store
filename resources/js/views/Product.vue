@@ -5,7 +5,7 @@
                 <span class="pi pi-home before:text-sm"></span> /
                 {{ product.category.title }}
             </p>
-            <h2 class="text-3xl sm:text-4xl sm:text-start text-center mb-6">
+            <h2 class="sm:text-start text-center mb-6">
                 {{ product.title }}
             </h2>
             <div
@@ -15,23 +15,21 @@
                     <img :src="product.image_url" class="w-full" />
                 </div>
                 <div>
-                    <h3 class="font-semibold text-xl sm:text-2xl mb-7">
-                        <span
-                            v-if="product.old_price"
-                            class="line-through me-2"
-                        >
-                            {{ product.old_price.toFixed(2) }} ₴
-                        </span>
+                    <h4
+                        v-if="product.old_price"
+                        class="font-semibold mb-1 line-through me-2"
+                    >
+                        {{ product.old_price.toFixed(2) }} ₴
+                    </h4>
+                    <h4 class="font-semibold mb-7">
                         {{ product.price.toFixed(2) }} ₴
-                    </h3>
+                    </h4>
                     <Button icon="pi pi-shopping-cart" label="Купити" />
                 </div>
             </div>
         </div>
-        <Spinner v-else-if="!product.id && loading" key="2" size="7xl" />
-        <p class="text-base sm:text-lg font-text" key="3" v-else>
-            Нажаль, не вдалося завантажити товар.
-        </p>
+        <Spinner v-else-if="!product.id && loading" key="2" />
+        <p key="3" v-else>Нажаль, не вдалося завантажити товар.</p>
     </FadeTransition>
 </template>
 

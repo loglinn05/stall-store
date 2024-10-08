@@ -1,7 +1,7 @@
 <template>
     <span
         class="pi pi-spin pi-spinner before:text-slate-600"
-        :class="'before:text-' + props.size"
+        :style="'font-size: ' + size"
     >
     </span>
 </template>
@@ -10,7 +10,7 @@
 const props = defineProps({
     size: {
         type: String,
-        default: "5xl",
+        default: "5rem",
     },
 });
 </script>

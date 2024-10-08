@@ -12,12 +12,12 @@
                 >
                     Stall
                 </h1>
-                <h2
-                    class="text-2xl sm:text-3xl text-white font-header font-semibold text-shadow-lg shadow-black"
+                <h3
+                    class="text-white font-header font-semibold text-shadow-lg shadow-black"
                 >
                     Гаджети, подарунки та аксесуари, що дарують комфорт і
                     радість!
-                </h2>
+                </h3>
                 <Button
                     label="Наші товари"
                     outlined

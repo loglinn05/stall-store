@@ -10,7 +10,11 @@
             placeholder="Оберіть категорію"
             class="w-64"
         />
-        <Spinner v-else-if="!categories.length && loading" key="2" size="4xl" />
+        <Spinner
+            v-else-if="!categories.length && loading"
+            key="2"
+            size="2rem"
+        />
         <Select
             v-else
             disabled

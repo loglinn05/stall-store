@@ -8,9 +8,9 @@
         ></div>
         <img :src="props.product.image_url" class="rounded-t-lg max-w-full" />
         <div class="flex flex-col grow p-3">
-            <h3 class="text-lg sm:text-xl mb-7">
+            <h6 class="text-lg sm:text-xl mb-7">
                 {{ props.product.title }}
-            </h3>
+            </h6>
             <div class="mt-auto font-semibold text-lg sm:text-xl mb-5">
                 <span v-if="props.product.old_price" class="line-through me-2">
                     {{ props.product.old_price.toFixed(2) }} ₴

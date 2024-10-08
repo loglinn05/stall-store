@@ -11,10 +11,8 @@
                 :product="product"
             />
         </div>
-        <Spinner v-else-if="!products.length && loading" key="2" size="7xl" />
-        <p class="text-base sm:text-lg font-text" key="3" v-else>
-            Нажаль, не вдалося завантажити товари.
-        </p>
+        <Spinner v-else-if="!products.length && loading" key="2" />
+        <p key="3" v-else>Нажаль, не вдалося завантажити товари.</p>
     </FadeTransition>
 </template>
 
